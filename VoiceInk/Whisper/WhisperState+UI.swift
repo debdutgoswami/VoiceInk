@@ -142,7 +142,7 @@ extension WhisperState {
     }
     
     @objc func handleLicenseStatusChanged() {
-        self.licenseViewModel = LicenseViewModel()
+        // Do nothing - creating LicenseViewModel here causes infinite recursion
     }
     
     @objc func handlePromptChange() {
